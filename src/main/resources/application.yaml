@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name:${name}
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASS}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true

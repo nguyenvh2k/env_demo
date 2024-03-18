@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  app:
+    container_name: env_demo
+    build: .
+    volumes:
+      - /home/web/log:/log
+    ports:
+      - ${PORT}:${PORT}
+    env_file:
+      - .env
+      - .env.dev
