@@ -2,11 +2,11 @@ server:
   port: ${PORT:8080}
 spring:
   application:
-    name:${name}
+    name: ${name}
   datasource:
-    url: ${MYSQL_URL}
-    username: ${MYSQL_USER}
-    password: ${MYSQL_PASS}
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
   jpa:
     open-in-view: false
     hibernate:
